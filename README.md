@@ -14,5 +14,7 @@ This code is designed for Format 1 dataset. After extraction, run the pre-proces
 
 python Image_Preprocess.py
 
-In 'Model_train', choose folder of the numpy files and training, validation, test sizes and number of epochs.
+python Output_Preprocessing.py
+
+In 'Model_train', choose folder of the numpy files and training, validation, test sizes and number of epochs. Select which model to train with from the 'models.py'.
 
