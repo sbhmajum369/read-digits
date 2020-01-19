@@ -102,7 +102,7 @@ def define_model_Alexnet():
 def model_New():
   model2 = Sequential()
   model2.add(Conv2D(48, (5, 5), activation='relu', data_format='channels_last', kernel_initializer='he_uniform', padding='same', input_shape=(64, 32, 3)))
-  model2.add(MaxPooling2D((2, 2)))
+  model2.add(MaxPooling2D((3, 3)))
   model2.add(Dropout(0.2))
   model2.add(Conv2D(64, (5, 5), activation='relu', kernel_initializer='he_uniform', padding='same'))
   model2.add(MaxPooling2D((2, 2)))
@@ -116,9 +116,6 @@ def model_New():
   model2.add(Dropout(0.2))
   model2.add(Conv2D(192, (2, 2), activation='relu', kernel_initializer='he_uniform', padding='same'))
   model2.add(Conv2D(192, (2, 2), activation='relu', kernel_initializer='he_uniform', padding='same'))
-  model2.add(Conv2D(192, (2, 2), activation='relu', kernel_initializer='he_uniform', padding='same'))
-  model2.add(Conv2D(192, (2, 2), activation='relu', kernel_initializer='he_uniform', padding='same'))
-  model2.add(MaxPooling2D((2, 2)))
   model2.add(Dropout(0.2))
   model2.add(Flatten())
   model2.add(Dense(180, activation='relu', kernel_initializer='he_uniform'))
