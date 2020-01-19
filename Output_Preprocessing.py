@@ -1,10 +1,11 @@
+''' Storing the digit labels in a numpy format '''
 
 import cv2
 import numpy as np
 import os
 from numpy import save
 
-folder='D:/Fall 2019/Machine and Deep Learning/Project'
+folder= input('Enter the folder loc for Labels file:')
 os.chdir(folder)
 
 labels = list()
@@ -16,6 +17,7 @@ with open("Labels.txt","r") as out:
 print('Total length:',len(labels))
 n=int(input("length of output:"))
 
+# Replacing '10' by '0'
 for i in range(0,n):
 	if labels[i]=='10':
 		print('Found')
