@@ -9,5 +9,10 @@ This code is designed for Format 1 dataset.
 
 A MATLAB code is provided for extracting individual digits, along with their labels, from the images using the matrix file.
 
-After extraction, run the preprocessing files. In 'Model_train', choose training, validation and test sizes in a uniform way.
+# Running
+After extraction, run the pre-processing files.
+
+python Image_Preprocess.py
+
+In 'Model_train', choose folder of the numpy files and training, validation, test sizes and number of epochs.
 
