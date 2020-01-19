@@ -4,13 +4,13 @@ Reading alphanumeric digits from real-world images is a very hard task to solve.
 Deep Learning can, however, solve these issues by taking each pixels into account. Using CNNs the task of character recognition in natural-scene images can be solved very efficiently.
 
 The Street View House Number(SVHN) dataset has a large amount of collection of these natural images collected from Google Street View images.
+
 Link: http://ufldl.stanford.edu/housenumbers/
-This code is designed for Format 1 dataset.
 
 A MATLAB code is provided for extracting individual digits, along with their labels, from the images using the matrix file.
 
 # Running
-After extraction, run the pre-processing files.
+This code is designed for Format 1 dataset. After extraction, run the pre-processing files.
 
 python Image_Preprocess.py
 
