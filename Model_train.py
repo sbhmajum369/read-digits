@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.utils import to_categorical
 import numpy as np
 from matplotlib import pyplot as plt
-from models import VGG_1, VGG_2, VGG_3, define_model_Alexnet, model_New
+from models import VGG_1, VGG_2, VGG_3, model_Alexnet, model_New
 
 folder = str(input('Enter the folder address:'))
 Tr=int(input('Enter number of Training samples:'))
