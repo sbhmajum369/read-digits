@@ -80,7 +80,7 @@ def VGG_3():
   model5.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
   return model5
 
-def define_model_Alexnet():
+def model_Alexnet():
   model1 = Sequential()
   model1.add(Conv2D(96, (9, 7), activation='relu', data_format='channels_last', kernel_initializer='he_uniform', padding='same', input_shape=(64, 32, 3)))
   model1.add(MaxPooling2D((3, 3)))
