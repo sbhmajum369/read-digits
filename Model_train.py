@@ -27,9 +27,8 @@ y_train=y[0:Tr]
 y_val=y[Tr:a]
 y_test=y[a:b]
 
-# 0:14000, 14000:18000, 18000:20400
 
-datagen = ImageDataGenerator()		# rescale=1.0/255.0  rotation_range=20
+datagen = ImageDataGenerator()
 train_generator=datagen.flow(x_train, y_train, batch_size=100)
 valid_generator=datagen.flow(x_val, y_val, batch_size=50)
 test_generator=datagen.flow(x_test,y_test, batch_size=50)
@@ -44,6 +43,7 @@ def summarize_diagnostics(history):
 	plt.plot(history.history['val_acc'], color='orange', label='test')
 	plt.show()
 
+# Model Training and Testing
 model = VGG_1()
 history=model.fit_generator(train_generator,steps_per_epoch=len(train_generator), epochs=e, validation_data=valid_generator, validation_steps=len(valid_generator),verbose=2)
 _, acc = model.evaluate_generator(test_generator, steps=len(test_generator), verbose=0)
