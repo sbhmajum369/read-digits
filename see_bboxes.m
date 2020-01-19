@@ -1,9 +1,11 @@
+''' Matlab code for single digit extraction along with their labels'''
+
 clear;
 clc;
 load digitStruct.mat
 fid=fopen('Labels.txt','w');
 k=0;
-folder='D:\Fall 2019\Machine and Deep Learning\Project\New _Dataset\Train'; % Storing folder for extracted single digits
+folder='D:\Images'; % Storing folder for extracted single digits
 n=input('Number of images to consider:')
 for i = 1:n
     im = imread([digitStruct(i).name]);
@@ -31,5 +33,3 @@ for i = 1:n
     
 end
 fclose(fid);
-
-% x=input('Store ? ','s');
