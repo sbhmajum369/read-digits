@@ -45,8 +45,8 @@ def summarize_diagnostics(history):
 
 # Model Training and Testing
 model = VGG_1()
-history=model.fit_generator(train_generator,steps_per_epoch=len(train_generator), epochs=e, validation_data=valid_generator, validation_steps=len(valid_generator),verbose=2)
-_, acc = model.evaluate_generator(test_generator, steps=len(test_generator), verbose=0)
+history=model.fit(train_generator,steps_per_epoch=len(train_generator), epochs=e, validation_data=valid_generator, validation_steps=len(valid_generator),verbose=2)
+_, acc = model.evaluate(test_generator, steps=len(test_generator), verbose=0)
 print('Test Accuracy= %.3f' % (acc * 100.0))
 summarize_diagnostics(history)
 
