@@ -8,11 +8,11 @@ from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras.preprocessing.image import img_to_array
 import os
 
-os.chdir('D:/Images')	# Home directory of images
+os.chdir('D:/.../Project/Images')	# Home directory of images
 
 n=int(input("Enter num of images for Training and Val:"))
 
-folder = 'D:/Resized_Images'	# New directory for storing resized images
+folder = 'D:/.../Project/Resized_Images'	# New directory for storing resized images
 
 for img in range(1,n+1):
 	img_data=cv2.imread(str(img)+'.png')
@@ -24,7 +24,6 @@ os.chdir(folder)
 
 # Storing in a numpy format
 photos= list()
-# Enumerate files in the directory
 for file in range(1,n+1):
 	print(file)
 	photo = cv2.imread(str(file)+'.png')
