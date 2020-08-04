@@ -11,7 +11,7 @@ A MATLAB code is provided alongside the dataset for extracting individual digits
 
 ## Steps for Training and Testing
 
-Clone the repo using: git clone 
+Clone the repo using: git clone https://github.com/smajum-AI/read-digits.git
 
 
 A) Install all the dependencies if you are using an offline environment, such as PC or Mac. You can create a virtual environment in your project folder and install all the dependencies that doesn't come with python installation.
