@@ -5,13 +5,13 @@ Deep Learning can, however, solve these issues by taking each pixels into accoun
 
 The following deep learning model was designed for classifying the individual characters after extracting them from the full image. For this, the Street View House Number(SVHN) dataset has been used. It has a large amount of collection of these natural images containing house numbers, which were collected from Google Street View images.
 
-Link: http://ufldl.stanford.edu/housenumbers/
+Link: [Street View House number](http://ufldl.stanford.edu/housenumbers/)
 
 A MATLAB code is provided alongside the dataset for extracting individual digits, along with their labels.
 
 ## Steps for Training and Testing
 
-Clone the repo using: git clone https://github.com/smajum-AI/read-digits.git
+Clone the repo using: `git clone`
 
 
 A) Install all the dependencies if you are using an offline environment, such as PC or Mac. You can create a virtual environment in your project folder and install all the dependencies that doesn't come with python installation.
